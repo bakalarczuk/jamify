@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(composer --version)",
+      "Bash(php --version)",
+      "Bash(php -v)",
+      "Read(//s/Projects/Web/**)",
+      "Bash(composer create-project:*)",
+      "Bash(composer install:*)",
+      "Bash(composer config:*)",
+      "Read(//c/Users/marek/Documents/**)",
+      "Bash(php -r \"echo file_get_contents\\(''https://repo.packagist.org/packages.json''\\) ? ''OK'' : ''FAIL'';\")",
+      "Bash(curl -o \"C:\\\\Users\\\\marek\\\\Documents\\\\cacert.pem\" https://curl.se/ca/cacert.pem)",
+      "Bash(curl --ssl-no-revoke -o \"C:\\\\Users\\\\marek\\\\Documents\\\\cacert.pem\" https://curl.se/ca/cacert.pem)",
+      "Bash(CURL_CA_BUNDLE=\"C:/Users/marek/Documents/cacert.pem\" SSL_CERT_FILE=\"C:/Users/marek/Documents/cacert.pem\" composer install)",
+      "Bash(php -i)",
+      "Read(//c/xampp/php/**)",
+      "Bash(php -r \":*)",
+      "Bash(php -r \"print_r\\(curl_version\\(\\)\\);\")",
+      "Bash(cp \"s:/Projects/Web/jamify/images/\"*.jpg \"s:/Projects/Web/jamify-laravel/public/images/\")",
+      "Bash(cp \"s:/Projects/Web/jamify/images/\"*.webp \"s:/Projects/Web/jamify-laravel/public/images/\")",
+      "Bash(cp \"s:/Projects/Web/jamify/images/flags/\"* \"s:/Projects/Web/jamify-laravel/public/images/flags/\")"
+    ],
+    "additionalDirectories": [
+      "s:\\Projects\\Web\\jamify-laravel"
+    ]
+  }
+}

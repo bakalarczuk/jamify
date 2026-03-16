@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p \"C:/Program Files/Common Files/SSL\")",
+      "Bash(cp \"C:/Users/marek/Documents/cacert.pem\" \"C:/Program Files/Common Files/SSL/cert.pem\")",
+      "Read(//c/Users/marek/.claude/projects/s--Projects-Web-jamify/memory/**)"
+    ]
+  }
+}
