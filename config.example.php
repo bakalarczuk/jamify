@@ -55,17 +55,16 @@ session_set_cookie_params([
 session_start();
 
 // --- 3) Definicje DB
-define('DB_HOST', 'mariadb106.server455778.nazwa.pl');
-define('DB_NAME', 'server455778_2');
-define('DB_USER', 'server455778_2');
-define('DB_PASS', 'Sznurki#098');
+define('DB_HOST', 'your_host');
+define('DB_NAME', 'your_database');
+define('DB_USER', 'your_user');
+define('DB_PASS', 'your_password');
 
 // --- 4) Połączenie z bazą
 $dsn = "mysql:host=".DB_HOST.";dbname=".DB_NAME.";charset=utf8mb4";
 $options = [
     PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
     PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-    // to sprawi, że klient od razu wykona SET NAMES utf8mb4
     PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8mb4 COLLATE utf8mb4_unicode_ci",
 ];
 
